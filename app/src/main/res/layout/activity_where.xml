@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhereActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_wave_5"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where Would You Like To Go?"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnBack"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="335dp"
+        android:drawableEnd="@drawable/ic_baseline_local_airport_24"
+        android:drawableRight="@drawable/ic_baseline_local_airport_24"
+        android:padding="9dp"
+        android:background="@drawable/colors"
+        android:hint="Enter Country Name"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="395dp"
+        android:drawableEnd="@drawable/ic_baseline_local_airport_24"
+        android:drawableRight="@drawable/ic_baseline_local_airport_24"
+        android:padding="9dp"
+        android:background="@drawable/colors"
+        android:hint="Enter City Name"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/colors1"
+        android:id="@+id/btnNext"/>
+
+</RelativeLayout>

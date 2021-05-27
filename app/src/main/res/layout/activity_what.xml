@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhereActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_wave_5"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What Would You Like To Do There?"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnBack"/>
+
+    <CheckBox
+        android:id="@+id/boxCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent A Car"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="150dp"/>
+    <CheckBox
+        android:id="@+id/boxMuseum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit Museums"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="150dp"/>
+    <CheckBox
+        android:id="@+id/boxCasino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit The Casino"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="150dp"/>
+    <CheckBox
+        android:id="@+id/boxDining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine Dining"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="150dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/colors1"
+        android:id="@+id/btnNext"/>
+
+</RelativeLayout>

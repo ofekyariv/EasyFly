@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_wave_5"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnBack"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:background="@drawable/colors"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:id="@+id/etEmail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:background="@drawable/colors"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:id="@+id/etPass"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/colors1"
+        android:text="REGISTER NOW"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:id="@+id/btnRegister"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

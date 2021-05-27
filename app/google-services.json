@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "655254751824",
+    "project_id": "easy-fly",
+    "storage_bucket": "easy-fly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655254751824:android:fc6ff170e9a945393c9f55",
+        "android_client_info": {
+          "package_name": "com.example.m"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655254751824-baehv2b8j8uvih2rsrqu0htlg11lupc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgji67OW2w1XjdfJ0e9KSUHoZG9Vqp7LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655254751824-baehv2b8j8uvih2rsrqu0htlg11lupc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

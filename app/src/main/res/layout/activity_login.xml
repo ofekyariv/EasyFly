@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_wave_5"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Easy Fly"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:id="@+id/EmailSignIn"
+        android:background="@drawable/colors"
+        android:drawableLeft="@drawable/ic_baseline_email_24" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:id="@+id/PassSignIn"
+        android:background="@drawable/colors"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/colors1"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:id="@+id/btnLogIn"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:text=" Register"
+        android:textColor="@color/colorPrimary"
+        android:background="#00FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/btnRegister"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:gravity="center"
+        android:text="FORGOT FASSWORD"
+        android:textColor="@color/colorPrimary"
+        android:background="#00FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/btnForgotPass"/>
+
+
+
+
+
+</RelativeLayout>
