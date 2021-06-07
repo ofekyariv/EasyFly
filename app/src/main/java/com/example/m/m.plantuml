@@ -1,0 +1,261 @@
+@startuml
+
+title __M's Class Diagram__\n
+
+  namespace com.example.m {
+    abstract class com.example.m.ATrip {
+        ~ budget : int
+        ~ key : String
+        ~ tripPrice : int
+        + ATrip()
+        {abstract} + compareTo()
+        + getBudget()
+        + getKey()
+        + getTripPrice()
+        + setBudget()
+        + setKey()
+        + setTripPrice()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.BroadcastCharging {
+        + BroadcastCharging()
+        + onReceive()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.BroadcastLowBattery {
+        + onReceive()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.BudgetActivity {
+        {static} + trip : Trip
+        ~ btnBack : Button
+        ~ btnNext : Button
+        ~ etBudget : EditText
+        + onClick()
+        # onCreate()
+        # onResume()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.ForgotPasswordActivity {
+        - btnBack : Button
+        - btnReset : Button
+        - email : String
+        - etEmail : EditText
+        - firebaseAuth : FirebaseAuth
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.LoadActivity {
+        + onCreate()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.LoginActivity {
+        {static} + email : String
+        ~ btnForgotPass : Button
+        ~ btnLogIn : Button
+        ~ btnRegister : Button
+        ~ etEmail : EditText
+        ~ etPass : EditText
+        - firebaseAuth : FirebaseAuth
+        - progressDialog : ProgressDialog
+        + login()
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.MainActivity {
+        ~ Email : String
+        ~ btnCreate : Button
+        ~ btnList : Button
+        ~ btnLogOut : Button
+        ~ receiver : BroadcastReceiver
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+        # onPause()
+        # onResume()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.RegisterActivity {
+        ~ btnBack : Button
+        ~ btnRegister : Button
+        ~ etEmail : EditText
+        ~ etPass : EditText
+        - firebaseAuth : FirebaseAuth
+        - progressDialog : ProgressDialog
+        + onClick()
+        + register()
+        # onCreate()
+        - newUser()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.SoundService {
+        ~ player : MediaPlayer
+        + onBind()
+        + onCreate()
+        + onDestroy()
+        + onLowMemory()
+        + onStartCommand()
+        + onUnBind()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.Trip {
+        - attraction1 : String
+        - attraction2 : String
+        - attraction3 : String
+        - attraction4 : String
+        - city : String
+        - country : String
+        + Trip()
+        + calculateCost()
+        + compareTo()
+        + getAttraction1()
+        + getAttraction2()
+        + getAttraction3()
+        + getAttraction4()
+        + getCity()
+        + getCountry()
+        + setAttraction1()
+        + setAttraction2()
+        + setAttraction3()
+        + setAttraction4()
+        + setCity()
+        + setCountry()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.TripListActivity {
+        - btnNewTrip : Button
+        - firebaseAuth : FirebaseAuth
+        - listView : ListView
+        - progressDialog : ProgressDialog
+        - trips : ArrayList<Trip>
+        + onClick()
+        + onItemLongClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.TripsAdapter {
+        ~ context : Context
+        ~ trips : List<Trip>
+        + TripsAdapter()
+        + getView()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.User {
+        + email : String
+        + password : String
+        + User()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.WhatActivity {
+        ~ boxCar : CheckBox
+        ~ boxCasino : CheckBox
+        ~ boxDining : CheckBox
+        ~ boxMuseum : CheckBox
+        ~ btnBack : Button
+        ~ btnNext : Button
+        - firebaseAuth : FirebaseAuth
+        - trips : ArrayList<Trip>
+        + onClick()
+        # onCreate()
+        - IfTripExist()
+        - newTrip()
+    }
+  }
+  
+
+  namespace com.example.m {
+    class com.example.m.WhereActivity {
+        ~ adapter : ArrayAdapter<String>
+        ~ btnBack : Button
+        ~ btnNext : Button
+        ~ etCity : EditText
+        ~ etCountry : AutoCompleteTextView
+        + onClick()
+        + onItemClick()
+        # onCreate()
+    }
+  }
+  
+
+  com.example.m.ATrip .up.|> java.lang.Comparable
+  com.example.m.BroadcastCharging -up-|> android.content.BroadcastReceiver
+  com.example.m.BroadcastLowBattery -up-|> android.content.BroadcastReceiver
+  com.example.m.BudgetActivity .up.|> android.view.View.OnClickListener
+  com.example.m.BudgetActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.ForgotPasswordActivity .up.|> android.view.View.OnClickListener
+  com.example.m.ForgotPasswordActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.LoadActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.LoginActivity .up.|> android.view.View.OnClickListener
+  com.example.m.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.MainActivity .up.|> android.view.View.OnClickListener
+  com.example.m.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.RegisterActivity .up.|> android.view.View.OnClickListener
+  com.example.m.RegisterActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.SoundService -up-|> android.app.Service
+  com.example.m.Trip .up.|> java.lang.Comparable
+  com.example.m.Trip -up-|> com.example.m.ATrip
+  com.example.m.TripListActivity .up.|> android.view.View.OnClickListener
+  com.example.m.TripListActivity .up.|> android.widget.AdapterView.OnItemLongClickListener
+  com.example.m.TripListActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.TripListActivity o-- com.example.m.TripsAdapter : adapter
+  com.example.m.TripsAdapter -up-|> android.widget.ArrayAdapter
+  com.example.m.WhatActivity .up.|> android.view.View.OnClickListener
+  com.example.m.WhatActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.m.WhereActivity .up.|> android.view.View.OnClickListener
+  com.example.m.WhereActivity .up.|> android.widget.AdapterView.OnItemClickListener
+  com.example.m.WhereActivity -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
